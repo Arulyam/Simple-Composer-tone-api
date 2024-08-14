@@ -1,0 +1,80 @@
+:root {
+	background-color: black;
+	color: whitesmoke;
+}
+
+main {
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.textbox {
+	padding: 0 50px;
+	text-align: center;
+}
+
+h2 {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+p {
+	margin: 0;
+}
+
+#start-composer-btn {
+	font-family: inherit;
+	font-weight: 500;
+	background-color: lightgrey;
+	border: 0;
+	border-radius: 15px;
+	padding: 1rem;
+	transition-duration: .3s;
+}
+#start-composer-btn:hover {
+	cursor: pointer;
+	background-color: whitesmoke;
+}
+
+.offline {
+	color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+#song-library {
+  display: block;
+  margin: 10px 0 20px;
+}
+#sequence-form {
+  text-align: center;
+}
+
+.sequence-input, select {
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+#play-btn {
+	font-family: inherit;
+	font-weight: 500;
+  font-size: 16px;
+	background-color: #deaa43;
+	border: 0;
+	border-radius: 15px;
+	padding: 1rem 1.5rem;
+	transition-duration: .3s;
+  color: white;
+}
+#play-btn:hover {
+	cursor: pointer;
+	background-color: #d38d04;
+}

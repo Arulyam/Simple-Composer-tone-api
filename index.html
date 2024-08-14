@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Prime Timers Club Composer</title>
+</head>
+
+<body>
+  <main>
+    <img src="assets/ptc-logo.jpg" alt="the prime timers club logo">
+    <div class="textbox">
+      <h2>Notes:</h2>
+      <p>Middle C: c,  C#: 0,  D: d,  D#: 1,  E: e,  F: f,  F#: 2, 
+ G: g,  G#: 3,  A: a,  A#: 4,  B: b</p>
+    </div>
+    <h2 class="message offline">Offline</h2>
+    <button id="start-composer-btn">Start Composer</button>
+    <div id="sequence-form" class="hidden">
+      <label for="song-library">Song Library: </label><br>
+      <select name="song-library" id="song-library" onchange="selectSong()">
+        <option default selected value>Select a song</option>
+        <option value="odetojoy">Ode to Joy - Ludwig van Beethoven</option>
+        <option value="hallelujah">Hallelujah - Leonard Cohen</option>
+        <option value="standbyme">Stand By Me - Ben E. King</option>
+        <option value="onelove">One Love - Bob Marley</option>
+      </select>
+      Sequence 1: <input class="sequence-input" id="sequence-input-1"> <br>
+      Sequence 2: <input class="sequence-input" id="sequence-input-2"> <br>
+      Sequence 3: <input class="sequence-input" id="sequence-input-3"> <br>
+      Sequence 4: <input class="sequence-input" id="sequence-input-4"> <br>
+      <button id="play-btn" onclick="lintAndPlaySequence()">Play</button>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.26/Tone.js"
+    integrity="sha512-+esjJ8NSEfoB5Sr8R7jTcYxCR1Bd6q9C+WQC0JA2UXVPT8Mlo/TJqqyp0qeeoxFzkAaa8t6tZCHLGmw3oNI2Qg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./composer.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
