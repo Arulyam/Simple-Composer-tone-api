@@ -1,5 +1,7 @@
-# Prime Timers Club Composer
+# Simple-Composer-tone-api
+This project was made with the assistance of resources provided by the Global Career Accelerator.
 
+## Freelance for Prime Timers Club
 The chain of senior centers, the "Prime Timers Club" is looking to provide a creative music program for their residents. They are using a composing tool that allows residents to enter strings of music notes as letters, and hear a playback of the sequence. 
 
 The composer is mostly working, but users are entering non-musical characters and the Prime Timers Club wants to resolve some edge cases. They'd also like to update functionality to let residents enter multiple sequences on different lines. Devshop has been hired to QA and expand the tool to make sure that no matter what is entered the user gets output that makes sense.
@@ -27,5 +29,4 @@ There is also a small library of songs we can use to test the tool's functionali
 - Go to `script.js` and complete the QA asks in the function `lintAndPlaySequence()`.
 
 ## Note
-You need to press the "Start Composer" button before you can play audio. By default, the web browser isn't allowed to play any audio before the user interacts with the page. [Click Here](https://developer.chrome.com/blog/autoplay/) if you're interested in learning more about Chrome's autoplay policy. 
-# Simple-Composer-tone-api
+You need to press the "Start Composer" button before you can play audio. By default, the web browser isn't allowed to play any audio before the user interacts with the page. [Click Here](https://developer.chrome.com/blog/autoplay/) if you're interested in learning more about Chrome's autoplay policy.
